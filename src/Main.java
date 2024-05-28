@@ -67,40 +67,20 @@ public class Main {
         //стоячие места
         int standingPlaces = carCapacity - seating;
         //сидячие места
-        int seatingАreOccupied = 15;
-                //Сюда вводим, свои значения, сколько сидячих мест занято
-        int standingPlacesOccupied = 25;
+        int yourNumber = 103;
+        // вводим сюда твой номер
 
-
-
-        int seatsAvailable = seating - seatingАreOccupied;
-        // Свободно сидчих мест
-
-        if (seatingАreOccupied >= 60) {
-            System.out.println("Cидячих мест больше нет");
+        if (yourNumber >= seating && yourNumber <= carCapacity) {
+            System.out.println("У тебя стоячие место");
         }
-        else {
-            System.out.println("Свобно " + seatsAvailable + " сидячих мест");
+        if (yourNumber <= seating){
+            System.out.println("У тебя сидячее место");
+        }
+        if (yourNumber > carCapacity){
+            System.out.println("Мест в вагоне нет");
         }
 
 
-        //Сюда вводим, свои значения, сколько стоячих мест занято
-        int standingPlacesAvailable = standingPlaces - standingPlacesOccupied;
-        //Свободно стоячих мест
-
-        if (standingPlacesOccupied >= standingPlaces){
-            System.out.println("Стоячих мест больше нет");
-        }
-        else {
-            System.out.println("Свободно " + standingPlacesAvailable + " Стоячих мест");
-        }
-
-        if (seatingАreOccupied >= seating && standingPlacesOccupied >= standingPlaces) {
-            System.out.println("Мест в вагоне больше нет");
-        }
-        else {
-            System.out.println("В вагоне свободно " + seatsAvailable + " сидячих мест и " +standingPlacesAvailable + " стоячих мест" );
-        }
 
         System.out.println("Задание 7");
 
